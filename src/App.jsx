@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 import { AppProvider } from "./context/AppContext";
 import ScrollToTop from "./components/ScrollToTop";
@@ -27,8 +25,6 @@ export default function App() {
   const [subscribed, setSubscribed] = useState(false);
 
   useEffect(() => {
-    AOS.init({ duration: 700, once: true, offset: 60 });
-
     const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
