@@ -3,20 +3,20 @@ import { GALLERY } from "../data/mockData";
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="bg-[#241E17] py-16 sm:py-24 md:py-28">
+    <section id="gallery" className="gallery-section bg-[#241E17] py-16 sm:py-24 md:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-        <div className="text-center max-w-xl mx-auto mb-10 sm:mb-14" data-aos="fade-up">
+        <div className="section-heading text-center max-w-xl mx-auto mb-10 sm:mb-14" data-aos="fade-up">
           <p className="uppercase tracking-[0.3em] text-[#D9A441] text-xs mb-3 font-semibold">Inside the Kitchen</p>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl">A Look Around</h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="gallery-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {GALLERY.map((src, i) => (
             <div
               key={src}
               data-aos="zoom-in"
               data-aos-delay={(i % 3) * 100}
-              className={`group relative overflow-hidden rounded-2xl border border-white/10 ${
+              className={`gallery-tile group relative overflow-hidden rounded-2xl border border-white/10 ${
                 i === 0 ? "sm:col-span-2 sm:row-span-2" : ""
               }`}
             >

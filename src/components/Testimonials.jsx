@@ -4,8 +4,8 @@ import { TESTIMONIALS } from "../data/mockData";
 
 export default function Testimonials() {
   return (
-    <section id="reviews" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16 sm:py-24 md:py-28">
-      <div className="text-center max-w-xl mx-auto mb-12 sm:mb-16" data-aos="fade-up">
+    <section id="reviews" className="testimonials-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16 sm:py-24 md:py-28">
+      <div className="section-heading text-center max-w-xl mx-auto mb-12 sm:mb-16" data-aos="fade-up">
         <p className="uppercase tracking-[0.3em] text-[#D9A441] text-xs mb-3 font-semibold">Guest Reviews</p>
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl">What People Are Saying</h2>
       </div>
@@ -16,7 +16,7 @@ export default function Testimonials() {
             key={name}
             data-aos="fade-up"
             data-aos-delay={i * 120}
-            className="bg-[#241E17] border border-white/10 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-[#D9A441]/40 transition-colors"
+            className="testimonial-card bg-[#241E17] border border-white/10 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-[#D9A441]/40 transition-colors"
           >
             <div>
               <Quote className="w-7 h-7 sm:w-8 sm:h-8 text-[#D9A441] mb-4 sm:mb-6" />

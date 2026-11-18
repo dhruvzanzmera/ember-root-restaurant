@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MapPin, Phone, Mail, Clock, Send, MessageSquare, Car, Calendar } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, Car } from "lucide-react";
 import { useApp } from "../context/AppContext";
 
 export default function ContactPage() {
@@ -20,9 +20,9 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="pt-24 min-h-screen">
+    <main className="site-page min-h-screen">
       {/* Header Banner */}
-      <section className="bg-[#241E17] border-b border-white/10 py-16 px-6 lg:px-10 text-center">
+      <section className="page-hero bg-[#241E17] border-b border-white/10 py-16 px-6 lg:px-10 text-center">
         <div className="max-w-7xl mx-auto space-y-4">
           <p className="uppercase tracking-[0.3em] text-[#D9A441] text-xs font-semibold">Get In Touch</p>
           <h1 className="font-serif text-4xl md:text-6xl">Contact &amp; Location</h1>
@@ -189,6 +189,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

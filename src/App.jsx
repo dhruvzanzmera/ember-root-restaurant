@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { AppProvider } from "./context/AppContext";
 import ScrollToTop from "./components/ScrollToTop";
+import ScrollReveal from "./components/ScrollReveal";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Toast from "./components/Toast";
@@ -41,7 +42,8 @@ export default function App() {
     <AppProvider>
       <Router>
         <ScrollToTop />
-        <div className="min-h-screen bg-[#1B1712] text-[#F4EFE6] font-sans selection:bg-[#D9A441] selection:text-[#1B1712] flex flex-col justify-between">
+        <ScrollReveal />
+        <div className="site-shell min-h-screen bg-[#1B1712] text-[#F4EFE6] font-sans selection:bg-[#D9A441] selection:text-[#1B1712] flex flex-col justify-between">
           <Navbar scrolled={scrolled} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
           <div className="flex-1">

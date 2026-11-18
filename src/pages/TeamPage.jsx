@@ -28,7 +28,7 @@ export default function TeamPage() {
   ];
 
   return (
-    <main className="pt-24 min-h-screen">
+    <main className="site-page min-h-screen">
       <SEO
         title="Meet Our Culinary Team & Executive Chefs | Ember & Root"
         description="Meet executive chef Arjun Mehta, head pastier Sara Fernandes, pitmasters, and sommeliers powering Ember & Root's wood-fired kitchen."
@@ -36,7 +36,7 @@ export default function TeamPage() {
       />
 
       {/* Header */}
-      <section className="bg-[#241E17] border-b border-white/10 py-12 md:py-16 px-4 sm:px-6 lg:px-10 text-center">
+      <section className="page-hero bg-[#241E17] border-b border-white/10 py-12 md:py-16 px-4 sm:px-6 lg:px-10 text-center">
         <div className="max-w-7xl mx-auto space-y-4">
           <p className="uppercase tracking-[0.3em] text-[#D9A441] text-xs font-semibold">Craftsmen of Smoke &amp; Spice</p>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl">Meet Our Culinary Team</h1>
@@ -88,19 +88,19 @@ export default function TeamPage() {
           {extendedTeam.map((member) => (
             <article
               key={member.name}
-              className="bg-[#241E17] border border-white/10 rounded-2xl overflow-hidden group hover:border-[#D9A441]/50 transition-colors"
+              className="team-card bg-[#241E17] border border-white/10 rounded-2xl overflow-hidden group hover:border-[#D9A441]/50 transition-colors"
             >
-              <div className="h-64 sm:h-72 overflow-hidden relative">
+              <div className="team-card-media h-64 sm:h-72 overflow-hidden relative">
                 <img
                   src={member.img}
                   alt={`${member.name} - ${member.role}`}
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 />
               </div>
-              <div className="p-6 space-y-2">
-                <h3 className="font-serif text-xl">{member.name}</h3>
-                <p className="text-[#D9A441] text-xs uppercase tracking-widest font-semibold">{member.role}</p>
-                <p className="text-sm text-[#F4EFE6]/60 leading-relaxed pt-2">{member.bio}</p>
+              <div className="team-card-info p-6 space-y-2">
+                <h3 className="team-card-name font-serif text-xl">{member.name}</h3>
+                <p className="team-card-role text-[#D9A441] text-xs uppercase tracking-widest font-semibold">{member.role}</p>
+                <p className="team-card-bio text-sm text-[#F4EFE6]/60 leading-relaxed pt-2">{member.bio}</p>
               </div>
             </article>
           ))}

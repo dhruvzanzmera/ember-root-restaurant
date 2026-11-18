@@ -32,7 +32,7 @@ export default function GalleryPage() {
   ];
 
   return (
-    <main className="pt-24 min-h-screen">
+    <main className="site-page min-h-screen">
       <SEO
         title="Visual Atmosphere & Kitchen Gallery | Ember & Root"
         description="Take a visual tour through our wood-fired hearth, rustic dining spaces, wine cellar vault, and artisanal dish presentations."
@@ -40,7 +40,7 @@ export default function GalleryPage() {
       />
 
       {/* Header Banner */}
-      <section className="bg-[#241E17] border-b border-white/10 py-12 md:py-16 px-4 sm:px-6 lg:px-10 text-center">
+      <section className="page-hero bg-[#241E17] border-b border-white/10 py-12 md:py-16 px-4 sm:px-6 lg:px-10 text-center">
         <div className="max-w-7xl mx-auto space-y-4">
           <p className="uppercase tracking-[0.3em] text-[#D9A441] text-xs font-semibold">Visual Atmosphere</p>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl">Inside Ember &amp; Root</h1>

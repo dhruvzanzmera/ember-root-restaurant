@@ -39,20 +39,20 @@ export default function Navbar({ scrolled, menuOpen, setMenuOpen }) {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
+      className={`site-header fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
           ? "bg-[#1B1712]/95 backdrop-blur-md shadow-lg shadow-black/40 border-b border-white/10"
           : "bg-[#1B1712]/60 backdrop-blur-sm border-b border-white/5"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between h-20">
-        <Link to="/" className="flex items-center gap-2 group shrink-0">
+      <div className="nav-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between h-20">
+        <Link to="/" className="brand-mark flex items-center gap-2 group shrink-0">
           <ChefHat className="w-7 h-7 text-[#D9A441] group-hover:rotate-12 transition-transform duration-300" strokeWidth={1.75} />
           <span className="font-serif text-xl sm:text-2xl tracking-wide text-[#F4EFE6]">Ember &amp; Root</span>
         </Link>
 
         {/* Desktop Links */}
-        <nav className="hidden lg:flex items-center gap-6 xl:gap-8 text-xs tracking-widest uppercase text-[#F4EFE6]/80 font-medium">
+        <nav className="desktop-nav hidden lg:flex items-center gap-6 xl:gap-8 text-xs tracking-widest uppercase text-[#F4EFE6]/80 font-medium">
           {navLinks.map(({ label, path }) => (
             <NavLink
               key={label}
@@ -69,7 +69,7 @@ export default function Navbar({ scrolled, menuOpen, setMenuOpen }) {
         </nav>
 
         {/* Action Buttons */}
-        <div className="flex items-center gap-2.5 sm:gap-3">
+        <div className="nav-actions flex items-center gap-2.5 sm:gap-3">
           <button
             onClick={() => setIsReserveModalOpen(true)}
             className="hidden sm:flex items-center gap-1.5 border border-[#D9A441]/50 text-[#D9A441] font-semibold text-xs px-3.5 sm:px-4 py-2.5 rounded-full hover:bg-[#D9A441] hover:text-[#1B1712] transition-all duration-200 active:scale-95"
@@ -104,7 +104,7 @@ export default function Navbar({ scrolled, menuOpen, setMenuOpen }) {
       {/* Mobile Navigation Drawer with Smooth Enter + Exit */}
       {renderMobileMenu && (
         <div
-          className={`lg:hidden bg-[#1B1712]/98 border-t border-white/10 px-6 py-6 flex flex-col gap-4 text-xs uppercase tracking-widest font-medium shadow-2xl backdrop-blur-xl ${
+          className={`mobile-drawer lg:hidden bg-[#1B1712]/98 border-t border-white/10 px-6 py-6 flex flex-col gap-4 text-xs uppercase tracking-widest font-medium shadow-2xl backdrop-blur-xl ${
             mobileMenuAnimating ? "animate-slide-down" : "animate-fade-out"
           }`}
         >

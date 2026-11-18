@@ -4,9 +4,9 @@ import { FAQS } from "../data/mockData";
 
 export default function Faq({ openFaq, setOpenFaq }) {
   return (
-    <section id="faq" className="bg-[#241E17] py-16 sm:py-24 md:py-28">
+    <section id="faq" className="home-faq-section bg-[#241E17] py-16 sm:py-24 md:py-28">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-10">
-        <div className="text-center mb-10 sm:mb-14" data-aos="fade-up">
+        <div className="section-heading text-center mb-10 sm:mb-14" data-aos="fade-up">
           <p className="uppercase tracking-[0.3em] text-[#D9A441] text-xs mb-3 font-semibold">Good to Know</p>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl">Frequently Asked</h2>
         </div>

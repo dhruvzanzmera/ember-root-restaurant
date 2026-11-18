@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Search, Flame, Leaf, Star, ChefHat, ShoppingBag, Filter } from "lucide-react";
+import { Search, Filter } from "lucide-react";
 import SEO from "../components/SEO";
 import { DISHES } from "../data/mockData";
 import DishCard from "../components/DishCard";
@@ -19,7 +19,7 @@ export default function MenuPage() {
   });
 
   return (
-    <main className="pt-24 min-h-screen">
+    <main className="site-page min-h-screen">
       <SEO
         title="Seasonal Culinary Menu | Ember & Root Wood-Fired Restaurant"
         description="Explore our seasonal menu featuring wood-fired meats, organic plant-based dishes, smoked seafood, and handcrafted desserts."
@@ -27,7 +27,7 @@ export default function MenuPage() {
       />
 
       {/* Header Banner */}
-      <section className="bg-[#241E17] border-b border-white/10 py-12 md:py-16 px-4 sm:px-6 lg:px-10 text-center">
+      <section className="page-hero bg-[#241E17] border-b border-white/10 py-12 md:py-16 px-4 sm:px-6 lg:px-10 text-center">
         <div className="max-w-7xl mx-auto space-y-4">
           <p className="uppercase tracking-[0.3em] text-[#D9A441] text-xs font-semibold">Seasonal Selection</p>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl">Our Full Culinary Menu</h1>

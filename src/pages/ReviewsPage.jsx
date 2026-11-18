@@ -21,7 +21,7 @@ export default function ReviewsPage() {
   };
 
   return (
-    <main className="pt-24 min-h-screen">
+    <main className="site-page min-h-screen">
       <SEO
         title="Diner Reviews & Ratings (4.9 Stars) | Ember & Root"
         description="Read real customer reviews and testimonials from over 40,000 satisfied diners at Ember & Root. Share your own dining experience."
@@ -29,7 +29,7 @@ export default function ReviewsPage() {
       />
 
       {/* Header */}
-      <section className="bg-[#241E17] border-b border-white/10 py-12 md:py-16 px-4 sm:px-6 lg:px-10 text-center">
+      <section className="page-hero bg-[#241E17] border-b border-white/10 py-12 md:py-16 px-4 sm:px-6 lg:px-10 text-center">
         <div className="max-w-7xl mx-auto space-y-4">
           <p className="uppercase tracking-[0.3em] text-[#D9A441] text-xs font-semibold">Guest Experiences</p>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl">What Diners Say</h1>

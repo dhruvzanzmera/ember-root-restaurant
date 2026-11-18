@@ -13,7 +13,7 @@ import ReserveCta from "../components/ReserveCta";
 
 export default function HomePage({ email, setEmail, subscribed, handleSubscribe, openFaq, setOpenFaq }) {
   return (
-    <main>
+    <main className="home-page">
       <SEO
         title="Ember & Root | Wood-Fired Fine Dining & Artisanal Restaurant"
         description="Food cooked the way it used to be. Wood smoke, slow hours, and a seasonal menu cooked over open flame. Reserve a table or order online today."

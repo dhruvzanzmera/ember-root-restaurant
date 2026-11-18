@@ -5,10 +5,10 @@ export default function ReserveCta() {
   const { setIsReserveModalOpen, setIsCartOpen } = useApp();
 
   return (
-    <section id="reserve" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-16 sm:pb-24 md:pb-28">
+    <section id="reserve" className="reserve-cta-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-16 sm:pb-24 md:pb-28">
       <div
         data-aos="fade-up"
-        className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#241E17] to-[#1B1712] border border-white/10 px-6 sm:px-10 md:px-16 py-10 sm:py-16 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 text-center md:text-left"
+        className="reserve-cta relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#241E17] to-[#1B1712] border border-white/10 px-6 sm:px-10 md:px-16 py-10 sm:py-16 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 text-center md:text-left"
       >
         <div>
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl mb-3">Ready when you are.</h2>
