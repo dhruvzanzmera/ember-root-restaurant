@@ -67,7 +67,8 @@ select:focus-visible {
   height: 82px;
 }
 
-.brand-mark svg {
+.brand-mark svg,
+.brand-mark img {
   filter: drop-shadow(0 0 12px rgba(231, 170, 85, 0.24));
 }
 

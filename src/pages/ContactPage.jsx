@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MapPin, Phone, Mail, Clock, Send, Car } from "lucide-react";
 import { useApp } from "../context/AppContext";
+import SEO from "../components/SEO";
 
 export default function ContactPage() {
   const { showToast, setIsReserveModalOpen } = useApp();
@@ -21,6 +22,11 @@ export default function ContactPage() {
 
   return (
     <main className="site-page min-h-screen">
+      <SEO
+        title="Contact & Location | Ember & Root Wood-Fired Restaurant"
+        description="Find Ember & Root in Surat, India. Get directions, contact our team, or request a table at our wood-fired restaurant."
+        keywords="Ember and Root contact, Surat restaurant location, restaurant reservations Surat, wood fired dining"
+      />
       {/* Header Banner */}
       <section className="page-hero bg-[#241E17] border-b border-white/10 py-16 px-6 lg:px-10 text-center">
         <div className="max-w-7xl mx-auto space-y-4">

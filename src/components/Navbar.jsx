@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { ChefHat, ShoppingBag, Menu as MenuIcon, X, Calendar } from "lucide-react";
+import { ShoppingBag, Menu as MenuIcon, X, Calendar } from "lucide-react";
 import { useApp } from "../context/AppContext";
 
 export default function Navbar({ scrolled, menuOpen, setMenuOpen }) {
@@ -47,7 +47,11 @@ export default function Navbar({ scrolled, menuOpen, setMenuOpen }) {
     >
       <div className="nav-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between h-20">
         <Link to="/" className="brand-mark flex items-center gap-2 group shrink-0">
-          <ChefHat className="w-7 h-7 text-[#D9A441] group-hover:rotate-12 transition-transform duration-300" strokeWidth={1.75} />
+          <img
+            src="/favicon.svg"
+            alt=""
+            className="w-7 h-7 shrink-0 group-hover:rotate-12 transition-transform duration-300"
+          />
           <span className="font-serif text-xl sm:text-2xl tracking-wide text-[#F4EFE6]">Ember &amp; Root</span>
         </Link>
 
