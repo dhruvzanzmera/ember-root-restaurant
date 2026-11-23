@@ -7,8 +7,8 @@ export default function Hero() {
   const { setIsReserveModalOpen } = useApp();
 
   return (
-    <section className="hero-section relative min-h-[90vh] pt-20 flex items-center overflow-hidden">
-      <div className="hero-layout relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 w-full py-16 sm:py-24">
+    <section className="hero-section relative flex items-center overflow-hidden">
+      <div className="hero-layout relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 w-full">
         <div className="hero-copy">
           <p className="hero-eyebrow">
             <span className="hero-eyebrow-mark"><ChefHat className="w-4 h-4" /></span>
